@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Bakugo",
+    "email": "bakugo@yahoo.com",
+    "password": "12345678"
+  },
+  {
+    "name": "Tanjiro",
+    "email": "tanjiro@yahoo.com",
+    "password": "12345678"
+  },
+  {
+    "name": "Bokuto",
+    "email": "bokuto@yahoo.com",
+    "password": "12345678"
+  }
+]
