@@ -1,0 +1,33 @@
+{
+  "name": "tech-tidbits",
+  "version": "1.0.0",
+  "description": "Tech Tidbits is a simple CMS-style blog site for developers.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "nodemon server.js",
+    "seed": "node seeds/seed.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caitlinw29/tech-tidbits.git"
+  },
+  "keywords": [],
+  "author": "Caitlin Wall",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caitlinw29/tech-tidbits/issues"
+  },
+  "homepage": "https://github.com/caitlinw29/tech-tidbits#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "connect-session-sequelize": "^7.1.2",
+    "dotenv": "^15.0.0",
+    "express": "^4.17.2",
+    "express-handlebars": "^6.0.2",
+    "express-session": "^1.17.2",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.15.0"
+  }
+}
