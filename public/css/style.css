@@ -8,6 +8,14 @@ body {
   color: #000000;
 }
 
+.inline {
+  display: inline;
+}
+
+.center {
+  margin: 0 auto;
+}
+
 nav {
   margin-bottom: 1%;
   color: #45eaef;
@@ -61,4 +69,10 @@ h1 {
 
 .card-contents {
   padding: 2%;
+}
+
+/* FORMS */
+
+.form .btn {
+  cursor: pointer;
 }
