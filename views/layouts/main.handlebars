@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Tech Tidbits</title>
+  <link rel="stylesheet" href="/css/jass.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <header class="p-5">
+    <nav>
+      <!-- login or logout links only show based on current state of session -->
+      {{#if logged_in}}
+      <a href="/"> Home </a>
+      <a href="/dashboard">Dashboard</a> 
+      <p id="logout">logout</p>
+      {{else}}
+      <a href="/login" id="login">Login</a>
+      {{/if}}
+    </nav>
+    <h1>
+      Tech Tidbits
+    </h1>
+  </header>
+
+  <main>
+    {{{ body }}}
+  </main>
+ 
+  <!-- logged in users only will have logout script -->
+  {{#if logged_in}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
+</body>
+
+</html>

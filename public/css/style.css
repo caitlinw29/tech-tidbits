@@ -1,0 +1,33 @@
+header {
+  background: #000000;
+}
+
+body {
+  background: #45eaef;
+}
+
+nav {
+  margin-bottom: 2%;
+  color: #45eaef;
+}
+
+nav a {
+  color: inherit;
+}
+
+nav a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+h1 {
+  background: #45eaef;
+  border-radius: 10px;
+  padding: 1%;
+  width: max-content;
+}
+
+#login {
+  font-size: 1.3rem;
+}
+
