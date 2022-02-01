@@ -1,17 +1,14 @@
 [
   {
-    "name": "Bakugo",
-    "email": "bakugo@yahoo.com",
+    "username": "Bakugo",
     "password": "12345678"
   },
   {
-    "name": "Tanjiro",
-    "email": "tanjiro@yahoo.com",
+    "username": "Tanjiro",
     "password": "12345678"
   },
   {
-    "name": "Bokuto",
-    "email": "bokuto@yahoo.com",
+    "username": "Bokuto",
     "password": "12345678"
   }
 ]

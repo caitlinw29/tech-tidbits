@@ -1,0 +1,20 @@
+<div class="card">
+  <div class="card-header">
+    <h2>
+      {{title}} 
+    </h2>
+    <p>
+      Posted by {{user.username}} on {{format_date date_created}}  
+    </p>
+  </div>
+  <p class="card-contents">{{contents}}</p>
+</div>
+{{!-- Loop through comments --}}
+{{#each comments as |comment| }}
+ <div class="card">
+    <div class="card-header">
+    </div>
+    <p class="card-contents">{{comment.contents}}</p>
+    <p> -{{comment.user.username}}, {{format_date comment.date_created}}</p>
+  </div>
+{{/each}}
