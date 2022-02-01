@@ -21,6 +21,11 @@ nav {
   color: #45eaef;
 }
 
+nav a{
+  font-size: 1.3rem;
+  padding: 0 1%;
+}
+
 a {
   color: inherit;
 }
@@ -35,10 +40,6 @@ h1 {
   border-radius: 10px;
   padding: .75%;
   width: max-content;
-}
-
-#login {
-  font-size: 1.3rem;
 }
 
 /* CARDS */ 

@@ -12,9 +12,9 @@
 <body>
   <header class="p-5">
     <nav>
+      <a href="/"> Home </a>
       <!-- login or logout links only show based on current state of session -->
       {{#if logged_in}}
-      <a href="/"> Home </a>
       <a href="/dashboard">Dashboard</a> 
       <p id="logout">logout</p>
       {{else}}
