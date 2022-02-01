@@ -16,7 +16,7 @@
       <!-- login or logout links only show based on current state of session -->
       {{#if logged_in}}
       <a href="/dashboard">Dashboard</a> 
-      <p id="logout">logout</p>
+      <a href="/" id="logout">Logout</a>
       {{else}}
       <a href="/login" id="login">Login</a>
       {{/if}}
