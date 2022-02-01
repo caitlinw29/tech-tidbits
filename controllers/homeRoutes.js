@@ -87,4 +87,17 @@ router.get('/signup', (req, res) => {
 
   res.render('signup');
 });
+
+//get the create post form to show
+router.get('/create_post', (req, res) => {
+
+  res.render('create_post_form');
+});
+
+//get the edit post form to show
+router.get('/edit_post', (req, res) => {
+
+  res.render('edit_post');
+});
+
 module.exports = router;
