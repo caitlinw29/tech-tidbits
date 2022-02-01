@@ -31,7 +31,7 @@ router.post('/login', async (req, res) => {
       return;
     }
 
-    //use auth.js in utils to check password
+    //use checkPassword method from User class
     const validPassword = await userData.checkPassword(req.body.password);
 
     if (!validPassword) {
