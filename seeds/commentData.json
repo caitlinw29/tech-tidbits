@@ -1,11 +1,14 @@
 [
   {
-    "contents": "Me neither, I prefer flexbox"
+    "contents": "Me neither, I prefer flexbox",
+    "post_id": 1
   },
   {
-    "contents": "A for loop is ....."
+    "contents": "A for loop is .....",
+    "post_id": 2
   },
   {
-    "contents": "I enjoy them too"
+    "contents": "I enjoy them too",
+    "post_id": 3
   }
 ]
