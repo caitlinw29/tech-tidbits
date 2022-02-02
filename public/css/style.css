@@ -8,6 +8,10 @@ body {
   color: #000000;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 .center {
   margin: 0 auto;
 }
@@ -72,4 +76,13 @@ h1 {
 
 .form .btn {
   cursor: pointer;
+}
+
+/* DASHBOARD */
+.post-list-item {
+  background: #000000;
+  color: #45eaef;
+  width: max-content;
+  padding: 2%;
+  border-radius: 10px;
 }

@@ -26,7 +26,7 @@ router.get('/', async (req, res) => {
 });
 
 //get one post by it's id and join with user data 
-router.get('/post/:id', async (req, res) => {
+router.get('/post/:id', withAuth, async (req, res) => {
   try {
     const postData = await Post.findByPk(req.params.id, {
       include: [
@@ -82,7 +82,7 @@ router.get('/dashboard', withAuth, async (req, res) => {
   }
 });
 
-//get the login to show, if not already logged in
+//get the login form to show, if not already logged in
 router.get('/login', (req, res) => {
   if (req.session.logged_in) {
     res.redirect('/dashboard');
@@ -92,7 +92,7 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
-//get the signup to show, but only if user is not logged in
+//get the signup form to show, but only if user is not logged in
 router.get('/signup', (req, res) => {
   if (req.session.logged_in) {
     res.redirect('/dashboard');
@@ -103,13 +103,12 @@ router.get('/signup', (req, res) => {
 });
 
 //get the create post form to show
-router.get('/create_post', (req, res) => {
-
+router.get('/create_post_form', withAuth, (req, res) => {
   res.render('create_post_form');
 });
 
 //get the edit post form to show
-router.get('/edit_post', (req, res) => {
+router.get('/edit_post', withAuth, (req, res) => {
 
   res.render('edit_post');
 });
