@@ -9,6 +9,20 @@
   </div>
   <p class="card-contents">{{contents}}</p>
 </div>
+{{#if logged_in}}
+<div class="col-md-8 center">
+  <form class="form new-comment-form mt-2">
+    <div class="form-group">
+      <label for="comment-contents">Comment:</label>
+      <input class="form-input" type="text" id="comment-contents" />
+    </div>
+    <div class="form-group">
+      <button class="btn btn-primary" type="submit">Submit</button>
+    </div>
+  </form>
+</div>
+{{/if}}
+
 {{!-- Loop through comments --}}
 {{#each comments as |comment| }}
  <div class="card">
@@ -18,3 +32,5 @@
     <p class="card-contents"> -{{comment.user.username}}, {{format_date comment.date_created}}</p>
   </div>
 {{/each}}
+
+<script src="/js/comment.js""></script>

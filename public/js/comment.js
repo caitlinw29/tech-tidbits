@@ -2,11 +2,14 @@ const newCommentHandler = async (event) => {
   event.preventDefault();
 
   const contents = document.querySelector('#comment-contents').value.trim();
-
+  
   if (contents) {
-    const response = await fetch(`/api/comments`, {
+    const post_id = window.location.toString().split('/')[
+      window.location.toString().split('/').length - 1
+    ];
+    const response = await fetch(`/api/comments/`, {
       method: 'POST',
-      body: JSON.stringify({ contents }),
+      body: JSON.stringify({ contents, post_id }),
       headers: {
         'Content-Type': 'application/json',
       },
@@ -24,27 +27,7 @@ const newCommentHandler = async (event) => {
   }
 };
 
-const delButtonHandler = async (event) => {
-  if (event.target.hasAttribute('data-id')) {
-    const id = event.target.getAttribute('data-id');
-
-    const response = await fetch(`/api/comments/${id}`, {
-      method: 'DELETE',
-    });
-
-    if (response.ok) {
-      document.location.replace(`/post/${id}`);
-    } else {
-      alert('Failed to delete comment');
-    }
-  }
-};
-
 
 document
   .querySelector('.new-comment-form')
   .addEventListener('submit', newCommentHandler);
-
-document
-  .querySelector('.comment-list')
-  .addEventListener('click', delButtonHandler);
