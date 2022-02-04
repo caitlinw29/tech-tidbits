@@ -5,7 +5,7 @@
 
 * Tech Tidbits uses Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication.
 
-* See it live with Heroku: [Tech Tidbits]()
+* See it live with Heroku: [Tech Tidbits](https://fierce-harbor-68269.herokuapp.com/) 
 
 ## Screenshots
 ![Home Page](./img/home.png)
